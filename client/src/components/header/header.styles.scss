@@ -1,0 +1,19 @@
+@import '../../colours.scss';
+
+.header-container {
+    background-color: $primaryColour;
+}
+
+#company-name {
+    color: #3A3042;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link{
+    background-color: $textColour !important;
+    color: white !important;
+}
+
+.nav-item a{
+    color: black !important;
+}

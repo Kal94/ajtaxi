@@ -1,0 +1,18 @@
+@import "../../colours.scss";
+
+.home-container {
+    background: linear-gradient(0deg, rgba(255, 225, 156, 0.8), rgba(255, 225, 156, 0.8)), url('../../background.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-container {
+    height: 500px;
+    width: 100%;
+}
+
+.hero-container .heading {
+    color: $textColour;
+    margin: auto !important;
+}

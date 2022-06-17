@@ -1,41 +1,31 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import HeaderComponent from '../../components/header/header.component'
-import ImageSliderComponent from '../../components/image-slider/image-slider.component';
 import Layout from '../../components/Layout'
 import './home.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import Superb from '../../superb.jpeg'
-
-const carImages = [
-    {
-        url: '../../superb.jpeg',
-        caption: 'Slide 1'
-    },
-    {
-        url: 'images/slide_3.jpg',
-        caption: 'Slide 2'
-    },
-    {
-        url: 'images/slide_4.jpg',
-        caption: 'Slide 3'
-    },
-];
 
 const Homepage = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     return (
         <Layout>
             <div className="home-container">
                 <div className="container">
 
-                    <div className="hero-container">
-                        <h1 className="heading">The most trusted cab company in Sheffield</h1>
+                    <div data-aos="fade-right" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="2000" className="hero-container">
+                        <h1  className="heading"><span>Fast</span> and<br /><span>Reliable</span><br /> Sheffield Taxis</h1>
                     </div>
 
                 </div>
             </div>
             <div className="container">
-                <ImageSliderComponent slideImages={carImages} />
+                
             </div>
         </Layout>
     )

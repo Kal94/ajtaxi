@@ -1,16 +1,9 @@
 import React from 'react'
 import './header.styles.scss';
 import Logo from '../../aj_logo.svg'
+import { navItems } from '../../data/data';
 
 const HeaderComponent = () => {
-
-    const navItems = [
-        'Home',
-        'New Booking',
-        'Services',
-        'About',
-        'Contact'
-    ]
 
     return (
         <div className="header-container">

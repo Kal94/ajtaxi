@@ -7,17 +7,32 @@ export const cityNames = [
 ]
 
 export const navItems = [
-    'Home',
-    'New Booking',
-    'Services',
-    'About',
-    'Contact'
+    {
+        name: "Home",
+        url: "/",
+    },
+    {
+        name: "New Booking",
+        url: "/new-booking",
+    },
+    {
+        name: "Services",
+        url: "/services",
+    },
+    {
+        name: "About",
+        url: "/about",
+    },
+    {
+        name: "Contact",
+        url: "/contact",
+    },
 ]
 
-export const  airportNames = [
+export const airportNames = [
     "Heathrow Airport",
-	"Manchester Airport",
-	"Gatwick Airport",
-	"Birmingham Airport",
-	"Glasgow Airport"
+    "Manchester Airport",
+    "Gatwick Airport",
+    "Birmingham Airport",
+    "Glasgow Airport"
 ]

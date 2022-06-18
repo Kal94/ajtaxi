@@ -1,7 +1,7 @@
 @import "../../colours.scss";
 
 .home-container {
-    background: linear-gradient(0deg, rgba(64, 64, 64, 0.9), rgba(64,64,64, 0.9)), url('../../background_5.jpg');
+    background: linear-gradient(0deg, rgba(64, 64, 64, 0.9), rgba(64, 64, 64, 0.9)), url('../../images/background_5.jpg');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +27,38 @@
         color: $secondaryColour;
         font-weight: 600;
     }
+}
+
+.slider-container {
+    display: flex;
+    height: 400px;
+    width: 100vw;
+    margin-top: 30px;
+
+    .vehicles {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .container > .row > h1 {
+        text-align:center
+    }
+}
+
+.vehicle-caption {
+    text-align: center;
+
+    span {
+        text-transform: uppercase;
+        color: $secondaryColour;
+        font-weight: 600;
+    }
+}
+
+.image-slider {
+    height: 200px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size:contain;
+
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import './footer.styles.scss';
-import Facebook from '../../iconmonstr-facebook-3.svg'
-import Whatsapp from '../../iconmonstr-whatsapp-3.svg'
-import Instagram from '../../iconmonstr-instagram-13.svg'
+import Facebook from '../../images/iconmonstr-facebook-3.svg'
+import Whatsapp from '../../images/iconmonstr-whatsapp-3.svg'
+import Instagram from '../../images/iconmonstr-instagram-13.svg'
 import Logo from '../../aj_logo.svg'
 
 import { airportNames, cityNames, navItems } from '../../data/data';
@@ -42,7 +42,7 @@ const FooterComponent = () => {
                 <div className="links-container row">
                     <div className="links-row col-3">
                             {
-                                navItems.map(item => <a href="/"><li>{item}</li></a>)
+                                navItems.map(item => <a href={`${item.url}`}><li>{item.name}</li></a>)
                             }
                     </div>
                     <div className="links-row col-3">

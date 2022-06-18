@@ -16,18 +16,12 @@ const HeaderComponent = () => {
 
                     <ul className="nav nav-pills">
                         {
-                            navItems.map((item, key) => {
-                                if (item === 'Home') {
-                                    return (
-                                        <li key={key} className="nav-item"><a href="/" className="nav-link active" aria-current="page">{item}</a></li>
-                                    )
-                                } else if (item !== 'Home') {
-                                    return (
-                                        <li key={key} className="nav-item"><a href={`/${item}`} className="nav-link">{item}</a></li>
+                            navItems.map((item, key) =>
 
-                                    )
-                                }
-                            })
+
+                                <li key={key} className="nav-item"><a href={`${item.url}`} className="nav-link" aria-current="page">{item.name}</a></li>
+
+                            )
                         }
                     </ul>
                 </header>
